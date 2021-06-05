@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Circle Info</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link rel="icon" href="img/icon.png">
+    <title>Drawing program</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>Find Circle</h1>
+    <h1>Draw</h1>
     <div class="frm">
-        <p>Enter Radius and choose Color</p>
-        <input id="radius" type="number" />
-        <input id="color" type="color" />
+        <h2>Pick a shape, radius/size and a color!</h2>
+        <div class="input-infomation">
+            <div>
+                <label for="select">Select a shape:</label>
+                <select>
+                    <option value="circle">Circle</option>
+                </select>
+            </div>
+            <div>
+                <label for="radius">Enter a radius:</label>
+                <input id="radius" type="number" />
+            </div>
+            <div>
+                <label for="color">Pick a color:</label>
+                <input id="color" type="color" />
+            </div>
+        </div>
     </div>
     <div class="inf">
         <div id="results"></div>
@@ -20,4 +41,5 @@
     </div>
     <script src="js/main.js"></script>
 </body>
+
 </html>
